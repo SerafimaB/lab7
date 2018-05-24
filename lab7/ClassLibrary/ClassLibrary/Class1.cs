@@ -59,9 +59,9 @@ namespace ClassLibrary
         public void knopka()
         {
             webDriver.Url = "https://sibsutis.ru/";
-            IWebElement button = webDriver.FindElement(By.XPath("//*[@id=\"layout\"]/div[2]/div[8]/div[2]/form/input[2]"));
+            IWebElement button = webDriver.FindElement(By.XPath("//*[@id=\"layout\"]/div[2]/div[2]/div[2]/div[3]/form/input[2]"));
             button.Click();
-
+            
 
 
 
@@ -71,9 +71,7 @@ namespace ClassLibrary
         public void end()
         {
             webDriver.Quit();
-
-
-
+            
         }
 
 
