@@ -49,7 +49,7 @@ namespace ClassLibrary
         public void pole()
         {
             webDriver.Url = "https://sibsutis.ru/";
-            IWebElement search = webDriver.FindElement(By.XPath("xpath of Webelement"));
+            IWebElement search = webDriver.FindElement(By.XPath("//*[@id=\"qqq\"]"));
             search.SendKeys("");
 
 
@@ -59,7 +59,7 @@ namespace ClassLibrary
         public void knopka()
         {
             webDriver.Url = "https://sibsutis.ru/";
-            IWebElement button = webDriver.FindElement(By.XPath("xpath of Webelement"));
+            IWebElement button = webDriver.FindElement(By.XPath("//*[@id=\"layout\"]/div[2]/div[8]/div[2]/form/input[2]"));
             button.Click();
 
 
