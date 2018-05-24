@@ -38,8 +38,9 @@ namespace ClassLibrary
         public void ssilka()
         {
             webDriver.Url = "https://sibsutis.ru/";
-            IWebElement element = webDriver.FindElement(By.XPath("xpath of Webelement"));
-            element.Click();
+            IWebElement element = webDriver.FindElement(By.XPath("//*[@id=\"mainMenu\"]/a[1]"));
+            element.Click();
+
 
 
         }
@@ -66,7 +67,7 @@ namespace ClassLibrary
 
         }
 
-        [TestCase]
+        [TearDown]
         public void end()
         {
             webDriver.Quit();
